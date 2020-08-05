@@ -76,6 +76,7 @@ class CyberApi
         $result = $this->call_cyberpanel($params, $url, $postParams);
         return $result;
     }
+	
     public function terminate_account($params)
     {
         $url = "deleteWebsite";
@@ -88,6 +89,7 @@ class CyberApi
         $result = $this->call_cyberpanel($params, $url, $postParams);
         return $result;
     }
+	
     public function change_account_password($params)
     {
         $url = "changeUserPassAPI";
@@ -101,6 +103,7 @@ class CyberApi
         $result = $this->call_cyberpanel($params, $url, $postParams);
         return $result;
     }
+	
     public function change_account_package($params)
     {
         $url = "changePackageAPI";
