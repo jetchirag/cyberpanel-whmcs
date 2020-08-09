@@ -50,6 +50,19 @@ class CyberApi
         return $result;
     }
 
+    public function delete_user($params)
+    {
+        $url = "submitUserDeletion";
+        $postParams =
+            [
+                "adminUser" => $params["serverusername"],
+                "adminPass" => $params["serverpassword"],
+                "websiteOwner" => $params["username"],
+            ];
+        $result = $this->call_cyberpanel($params, $url, $postParams);
+        return $result;
+    }	
+	
     public function change_account_status($params)
     {
         $url = "submitWebsiteStatus";
