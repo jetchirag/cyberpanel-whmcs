@@ -1,7 +1,7 @@
 <?php 
 /*
 * API Wrapper for Cyberpanel
-* Made for WHMCS module
+* by @jetchirag
 */
 
 
