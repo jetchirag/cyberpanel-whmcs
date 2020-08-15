@@ -36,4 +36,9 @@ git clone https://github.com/jetchirag/cyberpanel-whmcs.git cyberpanel
  API Access Disabled.
  ```
  **Solution**: Enable API Access from CyberPanel for user
-    
+ 
+ ##### Error:
+ ```
+ Unknown Error Occurred
+ ```
+ **Solution**: Usually means WHMCS is unable to reach api. Ensure hostname/ipaddress is correct and CyberPanel access port is open i.e. 8090 in firewall. 
