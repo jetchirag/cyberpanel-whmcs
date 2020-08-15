@@ -33,6 +33,11 @@ function cyberpanel_ConfigOptions()
             'Type' => 'text',
             'Default' => 'Default',
             'Description' => 'Enter package name for this product',
+        ),
+        'ACL' => array(
+            'Type' => 'text',
+            'Default' => 'user',
+            'Description' => 'ACL to be assigned to the new user',
         )
     );
 }

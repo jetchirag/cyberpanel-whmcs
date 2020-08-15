@@ -9,7 +9,7 @@ class CyberApi
 {
 	private function callUrl($params, $url)
 	{
-        return (($params["serversecure"]) ? "https" : "http"). "://".$params["serverhostname"].":8090/api/".$url;
+        return (($params["serversecure"]) ? "https" : "http"). "://".$params["serverhostname"].":". $params['serverport'] ."/api/".$url;
 	}
 	
 	private function call_cyberpanel($params,$url,$post = array())
@@ -45,6 +45,7 @@ class CyberApi
                 "packageName" => $params['configoption1'],
                 "websiteOwner" => $params["username"],
                 "ownerPassword" => $params["password"],
+                "acl" => $params['configoption2'],
             ];
         $result = $this->call_cyberpanel($params, $url, $postParams);
         return $result;
