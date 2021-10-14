@@ -1,6 +1,6 @@
 # CyberPanel WHMCS Module 
 
-Using WHMCS module for CyberPanel, you can sell or automate basic functions of CyberPanel for your customers. You can install this module by following WHMCS server module installation steps. Here are they again:-
+Using WHMCS module for CyberPanel, you can sell or automate basic functions of CyberPanel for your customers. You can install this module by following WHMCS server module installation steps. Here they are again:-
 
 ### Option 1 (Recommended)
 1. Login to SSH for whmcs server
